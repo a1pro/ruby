@@ -51,9 +51,6 @@ GEM
       activemodel (>= 4.0.0)
       activesupport (>= 4.0.0)
       mime-types (>= 1.16)
-    carrierwave_globalize (0.2.1)
-      carrierwave
-      globalize
     coffee-rails (4.1.1)
       coffee-script (>= 2.2.0)
       railties (>= 4.0.0, < 5.1.x)
@@ -69,10 +66,6 @@ GEM
     ffi (1.9.25)
     globalid (0.4.1)
       activesupport (>= 4.2.0)
-    globalize (5.1.0)
-      activemodel (>= 4.2, < 5.2)
-      activerecord (>= 4.2, < 5.2)
-      request_store (~> 1.0)
     i18n (0.9.5)
       concurrent-ruby (~> 1.0)
     jbuilder (2.7.0)
@@ -92,12 +85,14 @@ GEM
       mime-types-data (~> 3.2015)
     mime-types-data (3.2018.0812)
     mini_mime (1.0.1)
-    mini_portile2 (2.3.0)
+    mini_portile2 (2.8.0)
     minitest (5.11.3)
     multi_json (1.13.1)
-    nokogiri (1.8.4)
-      mini_portile2 (~> 2.3.0)
+    nokogiri (1.13.4)
+      mini_portile2 (~> 2.8.0)
+      racc (~> 1.4)
     popper_js (1.14.3)
+    racc (1.6.0)
     rack (1.6.10)
     rack-test (0.6.3)
       rack (>= 1.0)
@@ -130,8 +125,6 @@ GEM
     rb-inotify (0.9.10)
       ffi (>= 0.5.0, < 2)
     rdoc (4.3.0)
-    request_store (1.4.1)
-      rack (>= 1.4)
     sass (3.5.7)
       sass-listen (~> 4.0.0)
     sass-listen (4.0.0)
@@ -179,7 +172,6 @@ DEPENDENCIES
   bootstrap
   byebug
   carrierwave
-  carrierwave_globalize (~> 0.2.0)
   coffee-rails (~> 4.1.0)
   jbuilder (~> 2.0)
   jquery-rails
